@@ -5,22 +5,26 @@ Performing data analysis on Theater and Play outcomes
 This project provides launch outcomes for Theater based on launch month. It also provides launch outcomes for Plays based on different goal ranges.
 
 ### Purpose
-The project provides two purposes. First, it allows users to analyze the successful, failed and cancelled numbers of Theater launch based on month across years. Second, it provides analysis on the launch outcome on one of the theater subcategories, Plays, based on different goal ranges.
+The project provides two purposes. First, it allows users to analyze the successful, failed and canceled numbers of Theater launch based on month across years. Second, it provides analysis on the launch outcome on one of the theater subcategories, Plays, based on different goal ranges.
 
 ## Analysis and Challenges
 
 ### Analysis of Outcomes Based on Launch Date
 The analysis is performed using Pivot table, Pivot Line Charts, as well as utilizing filter and sort function in Pivot table. And Microsoft Paint is used to save the image. The Pivot Table shows a breakdown on the successful, failed and canceled event in numbers and provides a comparision across 12 months.
 
+![](Theater_Outcomes_vs_Launch.png)
+
 ### Analysis of Outcomes Based on Goals
 The analysis is performed using Pivot Line Charts, combined with formulas including COUNTIFS and SUM. And Microsoft Paint is used to save the image. The Pivot Chart is constructed on a data table by breaking down the goal into 12 ranges and comparing the percentage of successful and failed among the ranges.
 
+![](Outcomes_vs_Goals.png)
+
 ### Challenges and Difficulties Encountered
-The challenge I encountered when editing the COUNTIFS function is that I had to pay close attention to ensure all the manual inputs are correct for all cells. 
+The challenge I encountered when editing the COUNTIFS function is that I had to pay close attention to ensure all the manual inputs are correct for all cells and all data are captured by the table. I noticed when creating ranges based on "45000 to 49999" and "greater than 50000", I will not include the value at 50000, causing the number of failed outcome on my COUNTIFS table not matching the number of failed outcome on my raw data. So I input the COUNTIFS in the last range as ">=50000".
 
 ## Results
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
-  - May is the month with highest successful event in number; In general, the launch tends to have more successful number in summer from May to August; 
+  - May is the month with highest successful event in number; 
   - It’s not recommended to launch theater in December as the total of failed and cancelled theater is over the successful ones. 
 
 - What can you conclude about the Outcomes based on Goals?
